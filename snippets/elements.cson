@@ -1,0 +1,193 @@
+'.text.html.php':
+    'Spectre CSS Table':
+      'prefix': 'spTable'
+      'description': 'Add the table class to any <table> element. The class will add padding, border and emphasized table header. Use the table-striped class to <table> to add zebra striped style. For hoverable table rows, you can add the table-hover class to enable hover style. Use the active class to make <tr> element highlighted.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#tables'
+      'body': """
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr class="active">
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        """
+
+    'Spectre CSS Button':
+      'prefix': 'spBtn'
+      'description': 'Add the btn class to <a>, <input> or <button> elements for a default button. There are classes btn-primary and btn-link for predefined primary and link buttons. Add the btn-success or btn-error class for success (green) or error (red) button color. If you need more button colors, please use button mixins to create your own button color variants. Add the btn-sm or btn-lg class for small or large button size. Also, you can add the btn-block class for a full-width button. Please note that you could use the btn-action class for a square button, or add another circle class for a round button. A button with the loading class can show loading indicator.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#buttons'
+      'body': '<button class="btn">${1:buttonValue}</button>'
+
+    'Spectre CSS Button Group':
+      'prefix': 'spBtnGroup'
+      'description': 'If you want to use buttons as a group, add the btn-group class to the container. You can add the btn-group-block class for a full-width button group.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#buttons-groups'
+      'body': """
+        <div class="btn-group">
+            <button class="btn">${1:buttonValue}</button>
+            <button class="btn">$2</button>
+            <button class="btn">$3</button>
+        </div>
+        """
+
+    'Spectre CSS Form':
+      'prefix': 'spForm'
+      'description': 'Forms provide the most common control styles used in forms, including input, textarea, select, checkbox, radio and switch.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#forms'
+      'body': """
+        <div class="form-group">
+          <label class="form-label">${1:label}</label>
+          <input class="form-input" type="text" placeholder="${1:placeholder}">
+        </div>
+        """
+
+    'Spectre CSS Form Horizontal':
+      'prefix': 'spFormHoriz'
+      'description': 'If you want to have a horizontal form, add the form-horizontal class to the <form> container. And add the col-<1-12> and col-xs/sm/lg/xl-<1-12> class to the child elements for responsive form row layout.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#forms-horizontal'
+      'body': """
+        <form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-3 col-sm-12">
+                    <label class="form-label">${1:label}</label>
+                </div>
+                <div class="col-9 col-sm-12">
+                    <input class="form-input" type="text" placeholder="${1:placeholder}">
+                </div>
+            </div>
+        </form>
+        """
+    'Spectre CSS Form Input':
+      'prefix': 'spFormInput'
+      'description': 'Size: input-sm, input-lg.'
+      'body': '<input class="form-input" type="text" placeholder="${1:placeholder}">'
+
+    'Spectre CSS Form Input Icon':
+      'prefix': 'spFormInputIcon'
+      'body': """
+        <div class="has-icon-left">
+            <input type="text" class="form-input" placeholder="$2">
+            <i class="form-icon icon ${1:iconName}"></i>
+        </div>
+        """
+
+    'Spectre CSS Form Input Group':
+      'prefix': 'spFormInputGroup'
+      'description': 'If you want to attach text and button along with an input, add the input-group class to the input container. And add the input-group-addon class to the text element and input-group-btn to the button element.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#forms-input-groups'
+      'body': """
+        <div class="input-group">
+            <span class="input-group-addon"></span>
+            <input type="text" class="form-input" placeholder="$2">
+            <button class="btn btn-primary input-group-btn">${1:buttonValue}</button>
+        </div>
+        """
+
+    'Spectre CSS Form Input Validation':
+      'prefix': 'spFormInputVal'
+      'description': 'To use form validation styles, you can either add is-success or is-error class to the controls or add has-success or has-error class to parent elements. Use the form-input-hint class to provide form validation success and error messages.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#forms-validation'
+      'body': """
+        <div class="form-group has-${1:error}">
+            <input class="form-input" type="text" placeholder="$2">
+            <p class="form-input-hint">$3</p>
+        </div>
+        """
+
+    'Spectre CSS Form Select':
+      'prefix': 'spFormSelect'
+      'description': 'Size: select-sm, select-lg'
+      'body': """
+        <select class="form-select">
+            <option>${1:Default}</option>
+            <option>$2</option>
+            <option>$3</option>
+            <option>$4</option>
+        </select>
+        """
+
+    'Spectre CSS Form Radio':
+      'prefix': 'spFormRadio'
+      'body': """
+        <label class="form-radio">
+            <input type="radio" name="${1:radioName}" checked>
+            <i class="form-icon"></i> Option1
+        </label>
+        <label class="form-radio">
+            <input type="radio" name="${1:radioName}">
+            <i class="form-icon"></i> Option2
+        </label>
+        """
+
+    'Spectre CSS Form Switch':
+      'prefix': 'spFormSwitch'
+      'body': """
+        <label class="form-switch">
+            <input type="checkbox">
+            <i class="form-icon"></i> ${1:switchName}
+        </label>
+        """
+
+    'Spectre CSS Form Checkbox':
+      'prefix': 'spFormCheckbox'
+      'body': """
+        <label class="form-checkbox">
+            <input type="checkbox">
+            <i class="form-icon"></i> ${1:checkboxName}
+        </label>
+        """
+
+    'Spectre CSS Icon Navigation':
+      'prefix': 'spIcnNav'
+      'description': 'Name: icon-arrow-up, icon-arrow-right, icon-arrow-down, icon-arrow-left, icon-upward, icon-forward, icon-downward, icon-back, icon-caret, icon-menu, icon-apps, icon-more-horiz, icon-more-vert. Size: icon-2x, icon-3x, icon-4x.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#icons-navigation'
+      'body': '<i class="icon icon-${1:iconName}"></i>'
+
+    'Spectre CSS Icon Action':
+      'prefix': 'spIcnAction'
+      'description': 'Name: icon-resize-horiz, icon-resize-vert, icon-plus, icon icon-minus, icon-cross, icon-check, icon-stop, icon-shutdown, icon-refresh, icon-search, icon-flag, icon-bookmark, icon-edit, icon-delete, icon-share, icon-download, icon-upload. Size: icon-2x, icon-3x, icon-4x.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#icons-action'
+      'body': '<i class="icon icon-${1:iconName}"></i>'
+
+    'Spectre CSS Icon Object':
+      'prefix': 'spIcnObject'
+      'description': 'Name: icon-mail, icon-people, icon-message, icon-photo, icon-time, icon-location, icon-link, icon-emoji. Size: icon-2x, icon-3x, icon-4x.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#icons-object'
+      'body': '<i class="icon icon-${1:iconName}"></i>'
+
+    'Spectre CSS Label':
+      'prefix': 'spLabel'
+      'description': 'Add the label class to <span> or <small> elements. You can add another class label-primary, label-secondary, label-success, label-warning and label-error for colored labels. Add the label-rounded class to have rounded labels.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#labels'
+      'body': '<span class="label">${1:labelName}</span>'
+
+    'Spectre CSS Image':
+      'prefix': 'spImg'
+      'description': 'Add the img-responsive class to <img> elements. The images will scale with the parent sizes. Add the img-fit-contain or img-fit-cover class to <img> or <video> elements. The media will crop itself to fit inside the element.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#media-images'
+      'body': '<img src="${1:imgSource}" class="$2" alt="">'
+
+    'Spectre CSS Image Caption':
+      'prefix': 'spImgCaption'
+      'description': 'You can use the element <figure> for an image with a caption. Add the figure class to <figure> element. The images with the img-responsive class will be responsive. And the included class figure-caption will provide basic style for caption. Also, you can use text-left, text-center and text-right for caption alignment.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#media-figure'
+      'body': '<figure class="figure text-center"></figure>'
+      
+    'Spectre CSS Video':
+      'prefix': 'spVideo'
+      'description': 'For responsive video, add a container with the video-responsive class. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add video-responsive-4-3 for 4:3 ratio video container or video-responsive-1-1 for 1:1 ratio.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/elements.html#media-video'
+      'body': """
+        <div class="video-responsive">
+          <iframe src="$1" width="$2" height="$3" frameborder="0" allowfullscreen></iframe>
+        </div>
+        """

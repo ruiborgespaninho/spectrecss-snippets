@@ -1,0 +1,224 @@
+'.text.html.php':
+    'Spectre CSS Color Primary':
+      'prefix': 'spColorPrimary'
+      'body': 'text-primary'
+
+    'Spectre CSS Color Primary Background':
+      'prefix': 'spColorPrimaryBack'
+      'body': 'bg-primary'
+
+    'Spectre CSS Color Secondary':
+      'prefix': 'spColorSecondary'
+      'body': 'text-secondary'
+
+    'Spectre CSS Color Secondary Background':
+      'prefix': 'spColorSecondaryBack'
+      'body': 'bg-secondary'
+
+    'Spectre CSS Color Dark':
+      'prefix': 'spColorDark'
+      'body': 'text-dark'
+
+    'Spectre CSS Color Dark Background':
+      'prefix': 'spColorDarkBack'
+      'body': 'bg-dark'
+
+    'Spectre CSS Color Gray':
+      'prefix': 'spColorGray'
+      'body': 'text-gray'
+
+    'Spectre CSS Color Gray Background':
+      'prefix': 'spColorGrayBack'
+      'body': 'bg-gray'
+
+    'Spectre CSS Color Light':
+      'prefix': 'spColorLight'
+      'body': 'text-light'
+
+    'Spectre CSS Color Light Background':
+      'prefix': 'spColorLightBack'
+      'body': 'bg-light'
+
+    'Spectre CSS Color Success':
+      'prefix': 'spColorSuccess'
+      'body': 'text-success'
+
+    'Spectre CSS Color Success Background':
+      'prefix': 'spColorSuccessBack'
+      'body': 'bg-success'
+
+    'Spectre CSS Color Warning':
+      'prefix': 'spColorWarning'
+      'body': 'text-warning'
+
+    'Spectre CSS Color Warning Background':
+      'prefix': 'spColorWarningBack'
+      'body': 'bg-warning'
+
+    'Spectre CSS Color Error':
+      'prefix': 'spColorError'
+      'body': 'text-error'
+
+    'Spectre CSS Color Error Background':
+      'prefix': 'spColorErrorBack'
+      'body': 'bg-error'
+
+    'Spectre CSS Cursor Hand':
+      'prefix': 'spCursorHand'
+      'body': 'c-hand'
+
+    'Spectre CSS Cursor Move':
+      'prefix': 'spCursorMove'
+      'body': 'c-move'
+
+    'Spectre CSS Cursor Zoom-in':
+      'prefix': 'spCursorZoomIn'
+      'body': 'c-zoom-in'
+
+    'Spectre CSS Cursor Zoom-out':
+      'prefix': 'spCursorZoomOut'
+      'body': 'c-zoom-out'
+
+    'Spectre CSS Cursor Not Allowed':
+      'prefix': 'spCursorNotAll'
+      'body': 'c-not-allowed'
+
+    'Spectre CSS Display Block':
+      'prefix': 'spDispBlock'
+      'body': 'd-block'
+
+    'Spectre CSS Display Inline':
+      'prefix': 'spDispInline'
+      'body': 'd-inline'
+
+    'Spectre CSS Display Inline Block':
+      'prefix': 'spDispInlineBlock'
+      'body': 'd-inline-block'
+
+    'Spectre CSS Display Flex':
+      'prefix': 'spDispFlex'
+      'body': 'd-flex'
+
+    'Spectre CSS Display Inline Flex':
+      'prefix': 'spDispInlineFlex'
+      'body': 'd-inline-flex'
+
+    'Spectre CSS Display None':
+      'prefix': 'spDispNone'
+      'body': 'd-none'
+
+    'Spectre CSS Display Visible':
+      'prefix': 'spDispVisible'
+      'body': 'd-visible'
+
+    'Spectre CSS Display Invisible':
+      'prefix': 'spDispInvisible'
+      'body': 'd-invisible'
+
+    'Spectre CSS Divider Horizontal':
+      'prefix': 'spDividerHoriz'
+      'body': '<div class="divider text-center" data-content="OR"></div>'
+
+    'Spectre CSS Divider Vertical':
+      'prefix': 'spDividerVert'
+      'body': """
+        <div class="columns">
+            <div class="column">
+                <!-- column content -->
+            </div>
+        <div class="divider-vert" data-content="OR"></div>
+        <div class="column">
+            <!-- column content -->
+        </div>
+        </div>
+        """
+
+    'Spectre CSS Loading':
+      'prefix': 'spLoading'
+      'description': 'Loading indicator is used for loading or updating. You can add the loading class to a container for loading status. Add the loading-lg class for large size.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/utilities.html#loading'
+      'body': '<div class="loading"></div>'
+
+    'Spectre CSS Float Left':
+      'prefix': 'spFloatLeft'
+      'body': 'float-left'
+
+    'Spectre CSS Float Right':
+      'prefix': 'spFloatRight'
+      'body': 'float-right'
+
+    'Spectre CSS Position Relative':
+      'prefix': 'spPosRelative'
+      'body': 'relative'
+
+    'Spectre CSS Position Absolute':
+      'prefix': 'spPosAbsolute'
+      'body': 'absolute'
+
+    'Spectre CSS Position Fixed':
+      'prefix': 'spPosFixed'
+      'body': 'fixed'
+
+    'Spectre CSS Position Centered':
+      'prefix': 'spPosCentered'
+      'body': 'centered'
+
+    'Spectre CSS Margin Small':
+      'prefix': 'spMarginSmall'
+      'body': 'm-1'
+
+    'Spectre CSS Margin Large':
+      'prefix': 'spMarginLarge'
+      'body': 'm-2'
+
+    'Spectre CSS Padding Small':
+      'prefix': 'spPaddingSmall'
+      'body': 'p-1'
+
+    'Spectre CSS Padding Large':
+      'prefix': 'spPaddingLarge'
+      'body': 'p-2'
+
+    'Spectre CSS Text Align Left':
+      'prefix': 'spTextAlignLeft'
+      'body': 'text-left'
+
+    'Spectre CSS Text Align Center':
+      'prefix': 'spTextAlignCenter'
+      'body': 'text-center'
+
+    'Spectre CSS Text Align Right':
+      'prefix': 'spTextAlignRight'
+      'body': 'text-right'
+
+    'Spectre CSS Text Align Justify':
+      'prefix': 'spTextAlignJustify'
+      'body': 'text-justify'
+
+    'Spectre CSS Text Lowercase':
+      'prefix': 'spTextLowercase'
+      'body': 'text-lowercase'
+
+    'Spectre CSS Text Uppercase':
+      'prefix': 'spTextUppercase'
+      'body': 'text-uppercase'
+
+    'Spectre CSS Text Capitalize':
+      'prefix': 'spTextCapitalize'
+      'body': 'text-capitalize'
+
+    'Spectre CSS Text Bold':
+      'prefix': 'spTextBold'
+      'body': 'text-bold'
+
+    'Spectre CSS Text Italic':
+      'prefix': 'spTextItalic'
+      'body': 'text-italic'
+
+    'Spectre CSS Text Large':
+      'prefix': 'spTextLarge'
+      'body': 'text-large'
+
+    'Spectre CSS Text Ellipsis':
+      'prefix': 'spTextEllipsis'
+      'body': 'text-ellipsis'

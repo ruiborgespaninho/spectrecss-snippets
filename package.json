@@ -1,0 +1,9 @@
+{
+  "name": "spectrecss-snippets",
+  "version": "0.0.0",
+  "description": "Spectre CSS snippets for Atom Editor",
+  "repository": "https://github.com/ruiborgespaninho/spectrecss-snippets",
+  "engines": {
+    "atom": ">=0.174.0"
+  }
+}

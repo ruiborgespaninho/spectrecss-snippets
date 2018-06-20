@@ -1,0 +1,403 @@
+'.text.html.php':
+    'Spectre CSS Avatar':
+      'prefix': 'spAvatar'
+      'description': 'Add the avatar class to <img> element. There are 4 additional sizes available, including avatar-xl(64px), avatar-lg(48px), avatar-sm(24px), and avatar-xs(16px). By default, the avatar size is 32px. For users who don\'t have profile pictures, you may use their initials for avatars. Add the avatar class and avatar size class to <div> element. The data-initial attribute is the name appear inside the avatar.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#avatars'
+      'body': """
+        <figure class="avatar">
+            <img src="${1:imgSrc}" alt="$2">
+        </figure>
+        """
+
+    'Spectre CSS Avatar Presence':
+      'prefix': 'spAvatarPres'
+      'description': 'Avatars support presence indicators. You can add an <i> element with the avatar-presence class, and add online, busy or away class for different status colors. The default is gray which means offline.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#avatars-presence'
+      'body': """
+        <figure class="avatar">
+            <img src="${1:imgSrc}" alt="$2">
+            <i class="avatar-presence"></i>
+        </figure>
+        """
+
+    'Spectre CSS Accordeon':
+      'prefix': 'spAccordeon'
+      'description': 'Accordions are used to toggle sections of content.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#accordions'
+      'body': """
+        <div class="accordion">
+            <input type="radio" id="accordion-1" name="accordion-radio" hidden>
+            <label class="accordion-header" for="accordion-1">
+            Title
+            </label>
+            <div class="accordion-body">
+                <!-- Accordions content -->
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Badge':
+      'prefix': 'spBadge'
+      'description': 'Add the badge class to non self closing elements. And add the data-badge attribute to define the content of a badge. The badge will appear in the top-right direction of the element.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#badges'
+      'body': """
+        <button class="btn badge" data-badge="${1:number}">
+            Button
+        </button>
+        """
+
+    'Spectre CSS Bar':
+      'prefix': 'spBar'
+      'description': 'Add a container element with the bar class. And add child elements with the bar-item class. The width percentage value is needed for every bar-item.'
+      'description': 'Size: bar-sm.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#bars'
+      'body': """
+        <div class="bar">
+            <div class="bar-item" role="progressbar" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        """
+
+    'Spectre CSS Bar Slider':
+      'prefix': 'spBarSlider'
+      'description': 'You can add the bar-slider class to the Bars container. And add child elements with the bar-item class and bar-slider-btn inside bar-item. You need to set the bar-item width manually to have the slider point.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#bars-slider'
+      'body': """
+        <div class="bar bar-slider">
+            <div class="bar-item" role="progressbar" style="width:25%;">
+                <button class="bar-slider-btn btn" role="slider"></button>
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Breadcrumb':
+      'prefix': 'spBreadcrumb'
+      'description': 'Add a container element with the breadcrumb class. And add child elements with the breadcrumb-item class.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#breadcrumbs'
+      'body': """
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Settings</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Change avatar</a>
+            </li>
+        </ul>
+        """
+
+    'Spectre CSS Card':
+      'prefix': 'spCard'
+      'description': 'Add a container element with the card class. And add child elements with the card-image, card-header, card-body and/or card-footer classes. The card-image can be placed in any position.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#cards'
+      'body': """
+        <div class="card">
+            <div class="card-image">
+                <img src="img/osx-el-capitan.jpg" class="img-responsive">
+            </div>
+            <div class="card-header">
+                <div class="card-title h5">...</div>
+                <div class="card-subtitle text-gray">...</div>
+            </div>
+            <div class="card-body">
+            ...
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">...</button>
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Chips':
+      'prefix': 'spChips'
+      'description': 'Add a container element with the chip class. And add child text element, buttons or avatars with the avatar class.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#chips'
+      'body': """
+        <div class="chip">
+            <img src="" class="avatar avatar-sm">
+            Yan Zhu
+            <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+        </div>
+        """
+
+    'Spectre CSS Empty State':
+      'prefix': 'spEmpty'
+      'description': 'An empty state component can include icons, messages (title and subtitle messages) and action buttons or any combination of those elements. Add empty-icon, empty-title, empty-subtitle or empty-action to the elements.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#empty'
+      'body': """
+        <div class="empty">
+            <div class="empty-icon">
+                <i class="icon icon-people"></i>
+            </div>
+            <p class="empty-title h5">You have no new messages</p>
+            <p class="empty-subtitle">Click the button to start a conversation.</p>
+            <div class="empty-action">
+                <button class="btn btn-primary">Send a message</button>
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Menu':
+      'prefix': 'spMenu'
+      'description': 'Add a container element with the menu class. And add child elements with the menu-item class. You can separate menu items with a divider.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#menu'
+      'body': """
+        <ul class="menu">
+            <!-- menu header text -->
+            <li class="divider" data-content="LINKS">
+            </li>
+            <!-- menu item standard -->
+            <li class="menu-item">
+                <a href="#">
+                    <i class="icon icon-link"></i> Slack
+                </a>
+            </li>
+            <!-- menu item with form control -->
+            <li class="menu-item">
+                <label class="form-checkbox">
+                <input type="checkbox">
+                <i class="form-icon"></i> form-checkbox
+                </label>
+            </li>
+            <!-- menu divider -->
+            <li class="divider"></li>
+            <!-- menu item with badge -->
+            <li class="menu-item">
+                <div class="menu-badge">
+                    <label class="label label-primary">2</label>
+                </div>
+                <a href="#">
+                <i class="icon icon-link"></i> Settings
+                </a>
+            </li>
+        </ul>
+        """
+
+    'Spectre CSS Menu Dropdown':
+      'prefix': 'spMenuDropdown'
+      'description': 'Add a container element with the dropdown class. And add a focusable element with the dropdown-toggle class for the button and a menu component right next to it. You also need to add tabindex to make the buttons focusable.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#menu-dropdown'
+      'body': """
+        <div class="dropdown">
+            <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                dropdown menu <i class="icon icon-caret"></i>
+            </a>
+            <!-- menu component -->
+            <ul class="menu">
+            ...
+            </ul>
+        </div>
+        """
+
+    'Spectre CSS Modal':
+      'prefix': 'spModal'
+      'description': 'Add a container element with the modal class. And add a real container modal-container and overlay modal-overlay inside it. You can add child elements with the modal-header, modal-body and modal-footer - any or all of them. Size: modal-sm, modal-lg.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#modals'
+      'body': """
+        <div class="modal active" id="modal-id">
+            <a href="#close" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header">
+                    <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+                    <div class="modal-title h5">Modal title</div>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <!-- content here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    ...
+                </div>
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Nav':
+      'prefix': 'spNav'
+      'description': 'Add a container element with the nav class. And add child elements with the nav-item class. The nav-item with the active class will be highlighted.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#nav'
+      'body': """
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#">Elements</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#">Layout</a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#">Flexbox grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Responsive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Navbar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Empty states</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#">Components</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Utilities</a>
+            </li>
+        </ul>
+        """
+
+    'Spectre CSS Pagination':
+      'prefix': 'spPagination'
+      'description': 'Add a container element with the pagination class. And add child elements with the page-item class. The page-item with the active class will be highlighted. You can add the disabled class to the page-item to have unclickable page links.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#pagination'
+      'body': """
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item active">
+                <a href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#">3</a>
+            </li>
+            <li class="page-item">
+                <span>...</span>
+            </li>
+            <li class="page-item">
+                <a href="#">12</a>
+            </li>
+            <li class="page-item">
+                <a href="#">Next</a>
+            </li>
+        </ul>
+        """
+
+    'Spectre CSS Panel':
+      'prefix': 'spPanel'
+      'description': 'Add a container element with the panel class. And add child elements with the panel-header, panel-nav, panel-body and/or panel-footer classes. The panel-body can be auto expanded and vertically scrollable.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#panels'
+      'body': """
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title">Comments</div>
+            </div>
+            <div class="panel-nav">
+                <!-- navigation components: tabs, breadcrumbs or pagination -->
+            </div>
+            <div class="panel-body">
+                <!-- contents -->
+            </div>
+            <div class="panel-footer">
+                <!-- buttons or inputs -->
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Popover':
+      'prefix': 'spPopover'
+      'description': 'Wrap an element by a container with the popover class. And add a container with the popover-container next to the element. You can use Cards component inside the popover-container. Also, you can add the popover-right, popover-bottom or popover-left class to define the position. By default, the popovers appear above the element.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#popovers'
+      'body': """
+        <div class="popover popover-right">
+            <button class="btn btn-primary">right popover</button>
+            <div class="popover-container">
+                <div class="card">
+                    <div class="card-header">
+                    ...
+                    </div>
+                    <div class="card-body">
+                    ...
+                    </div>
+                    <div class="card-footer">
+                    ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Step':
+      'prefix': 'spStep'
+      'description': 'Add a container element with the step class. And add child elements with the step-item class. The step-item with the active class will be highlighted and indicate the current state of progress.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#steps'
+      'body': """
+        <ul class="step">
+            <li class="step-item">
+                <a href="#" class="tooltip" data-tooltip="Step 1">Step 1</a>
+            </li>
+            <li class="step-item active">
+                <a href="#" class="tooltip" data-tooltip="Step 2">Step 2</a>
+            </li>
+            <li class="step-item">
+                <a href="#" class="tooltip" data-tooltip="Step 3">Step 3</a>
+            </li>
+            <li class="step-item">
+                <a href="#" class="tooltip" data-tooltip="Step 4">Step 4</a>
+            </li>
+        </ul>
+        """
+
+    'Spectre CSS Tab':
+      'prefix': 'spTab'
+      'description': 'Add a container element with the tab class. And add child elements with the tab-item class. You can add the tab-block class for a full-width tab. The tab-item or its child <a> with the active class will be highlighted.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#tabs'
+      'body': """
+        <ul class="tab tab-block">
+            <li class="tab-item active">
+                <a href="#">Music</a>
+            </li>
+            <li class="tab-item">
+                <a href="#" class="active">Playlists</a>
+            </li>
+            <li class="tab-item">
+                <a href="#">Radio</a>
+            </li>
+            <li class="tab-item">
+                <a href="#">Connect</a>
+            </li>
+        </ul>
+        """
+
+    'Spectre CSS Tile':
+      'prefix': 'spTile'
+      'description': 'Add a container with the tile class. And add child elements with the tile-icon, tile-content or/and tile-action classes. The tile-icon and tile-action are optional. There are tile-title and tile-subtitle classes for title and subtitle text styles.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#tiles'
+      'body': """
+        <div class="tile">
+            <div class="tile-icon">
+                <div class="example-tile-icon">
+                    <i class="icon icon-file centered"></i>
+                </div>
+            </div>
+            <div class="tile-content">
+                <p class="tile-title">The Avengers</p>
+                <p class="tile-subtitle text-gray">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+            </div>
+            <div class="tile-action">
+                <button class="btn btn-primary">Join</button>
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Toast':
+      'prefix': 'spToast'
+      'description': 'Add a container element with the toast class. You can add any text within the container, and even icons. You may also add a close button with the btn-clear class if you need. And you can add the toast-primary, toast-success, toast-warning or toast-error class for additional toast colors.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#toasts'
+      'body': """
+        <div class="toast">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        """
+        
+    'Spectre CSS Tooltip':
+      'prefix': 'spTooltip'
+      'description': 'Add the tooltip class and the data-tooltip attribute, which contains the tooltip content, to non self closing elements. And add the tooltip-right, tooltip-bottom or tooltip-left class to define the position of a tooltip. By default, the tooltip appears above the element.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/components.html#tooltips'
+      'body': '<button class="btn tooltip" data-tooltip="{1:tooltipText}">$2</button>'

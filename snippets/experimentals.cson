@@ -1,0 +1,79 @@
+'.text.html.php':
+    'Spectre CSS Progress':
+      'prefix': 'spProgress'
+      'body': '<progress class="progress" max="100"></progress>'
+
+    'Spectre CSS Slider':
+      'prefix': 'spSlider'
+      'body': '<input class="slider" type="range" min="0" max="100" value="50">'
+
+    'Spectre CSS Timeline':
+      'prefix': 'spTimeline'
+      'body': """
+        <div class="timeline">
+            <div class="timeline-item" id="timeline-example-1">
+                <div class="timeline-left">
+                    <a class="timeline-icon" href="#timeline-example-1"></a>
+                </div>
+                <div class="timeline-content">
+                <!-- tiles structure -->
+                </div>
+            </div>
+            <div class="timeline-item" id="timeline-example-2">
+                <div class="timeline-left">
+                    <a class="timeline-icon icon-lg" href="#timeline-example-2">
+                        <i class="icon icon-check"></i>
+                    </a>
+                </div>
+                <div class="timeline-content">
+                <!-- tiles structure -->
+                </div>
+            </div>
+            ...
+        </div>
+        """
+
+    'Spectre CSS Filter':
+      'prefix': 'spFilter'
+      'description': 'Filters use tag-1 to tag-8 to flag different tags. tag-0 is reserved for clearing filter (or showing all). You can overwrite $filter-number in _filters.scss to have more filters.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/experimentals.html#filters'
+      'body': """
+        <div class="filter">
+            <input type="radio" id="tag-0" class="filter-tag" name="filter-radio" hidden checked>
+            <input type="radio" id="tag-1" class="filter-tag" name="filter-radio" hidden>
+            <input type="radio" id="tag-2" class="filter-tag" name="filter-radio" hidden>
+
+            <div class="filter-nav">
+                <label class="chip" for="tag-0">All</label>
+                <label class="chip" for="tag-1">Action</label>
+                <label class="chip" for="tag-2">Roleplaying</label>
+            </div>
+
+            <div class="filter-body">
+                <div class="filter-item card" data-tag="tag-1">
+                    <!-- Filter item content -->
+                </div>
+                    <div class="filter-item card" data-tag="tag-2">
+                    <!-- Filter item content -->
+                </div>
+                <!-- Filter items -->
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Comparaison slider':
+      'prefix': 'spCompSlider'
+      'body': """
+        <div class="comparison-slider">
+            <figure class="comparison-before">
+                <!-- image (before) -->
+                <div class="comparison-label">Before</div>
+            </figure>
+
+            <figure class="comparison-after">
+                <!-- image (after) -->
+                <div class="comparison-label">After</div>
+                <textarea class="comparison-resizer" readonly></textarea>
+            </figure>
+        </div>
+        """

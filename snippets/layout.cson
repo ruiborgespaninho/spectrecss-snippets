@@ -1,0 +1,39 @@
+'.text.html.php':
+    'Spectre CSS Navbar':
+      'prefix': 'spNavbar'
+      'description': 'The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the navbar-section class will be evenly distributed in the container. You can use navbar-center class to have a centered section.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/layout.html#navbar'
+      'body': """
+        <header class="navbar">
+            <section class="navbar-section">
+                <a href="" class="navbar-brand mr-2">${1:brandName}</a>
+                <a href="" class="btn btn-link">element1</a>
+                <a href="" class="btn btn-link">element2</a>
+            </section>
+            <section class="navbar-section">
+                <div class="input-group input-inline">
+                    <input class="form-input" type="text" placeholder="search">
+                    <button class="btn btn-primary input-group-btn">Search</button>
+                </div>
+            </section>
+        </header>
+        """
+
+    'Spectre CSS Flex Grid':
+      'prefix': 'spFlexGrid'
+      'description': 'Add the columns class to a container with the container class. And add any element you want with the column class inside the container. These columns will take up the space equally. You can specific the width of each column by adding class col-<1-12>. And you can add the col-gapless class to the columns to have gapless columns.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/layout.html#grid'
+      'body': """
+        <div class="container">
+            <div class="columns">
+                <div class="column col-${1:colWidth}">$2</div>
+                <div class="column col-$3">$4</div>
+            </div>
+        </div>
+        """
+
+    'Spectre CSS Flex Column':
+      'prefix': 'spFlexCol'
+      'description': 'Grid system with 12 columns: col-1, col-2, etc, col-12. Offset: col-mx-auto, col-ml-auto, col-mr-auto, Responsive: col-xs-<1-12>, col-sm-<1-12>, etc.'
+      'descriptionMoreURL': 'https://picturepan2.github.io/spectre/layout.html#grid'
+      'body': '<div class="column col-${1:colWidth}">$2</div>'
